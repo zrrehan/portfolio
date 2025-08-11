@@ -6,7 +6,7 @@ function LoadData({children}) {
     const { data, isPending, isError, error } = useQuery({
         queryKey: ["todos"],
         queryFn: async () => {
-            const res = await fetch("./personal.json");
+            const res = await fetch("/personal.json");
             return res.json();
         }
     })

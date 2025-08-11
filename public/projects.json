@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Managely",
+        "title": "Employee Management Project",
+        "image": "https://media.licdn.com/dms/image/v2/D562DAQGeFIigEPi5Dw/profile-treasury-image-shrink_800_800/B56ZiJS0Q8G0Ag-/0/1754650069342?e=1755547200&v=beta&t=F48F71tKOgTT7DT9ww0F8drQm9XMXfh76ryfwe28Vdc",
+        "description": "Managely is a full-stack MERN web application designed for companies to monitor employee workflow, manage salaries, and assign HR/admin roles securely. Built with role-based authentication using Firebase, integrated MongoDB database, and a responsive UI powered by Tailwind CSS and DaisyUI.",
+        "liveSite": "https://managely-51f92.web.app/",
+        "github": "https://github.com/zrrehan/Managely-Client"
+    },
+    {
+        "name": "PlayFix",
+        "title": "Repair Service Management Project",
+        "image": "https://media.licdn.com/dms/image/v2/D562DAQGepRRzj_b4PQ/profile-treasury-image-shrink_800_800/B56ZiSXzvWH0AY-/0/1754802372533?e=1755547200&v=beta&t=TB4sQBKIDNd43-2GvXBzI3PsCLF_2qs8_xnp0VJRFAg",
+        "description": "PlayFix is a full-stack MERN web application where users can offer, manage, and book servicing for gaming consoles like PlayStation 4 and PlayStation 5. Built with modern web technologies, it includes robust authentication, role-based dashboard features, booking workflows, and service status updates.",
+        "liveSite": "https://playfix-af789.web.app/",
+        "github": "https://github.com/zrrehan/playfix-client"
+    },
+    {
+        "name": "Recipe-Book",
+        "title": "Recipe Management Project",
+        "image": "https://media.licdn.com/dms/image/v2/D562DAQFajd7fDLv2DA/profile-treasury-image-shrink_800_800/B56ZiJV3qRHUAY-/0/1754650870364?e=1755547200&v=beta&t=RkP8dZC1AjdIotjvcGKRR73RzpjW32gtbv3_Q3G5AlM",
+        "description": "A full-stack MERN (MongoDB, Express, React, Node.js) web application where users can explore, add, like, and manage recipes. Built with Firebase authentication, MongoDB backend, and a fully responsive UI.",
+        "liveSite": "https://recipe-book-ebddf.web.app/",
+        "github": "https://github.com/zrrehan/recipe-book"
+    }
+]

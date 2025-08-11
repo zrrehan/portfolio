@@ -12,6 +12,7 @@ import LoadData from './LoadData';
 import Resume from './Routes/Resume';
 import Education from './Components/Resume/Education';
 import Skills from './Components/Resume/Skills';
+import Projects from './Components/Resume/Projects/Projects';
 
 const router = createBrowserRouter([
   {
@@ -24,9 +25,10 @@ const router = createBrowserRouter([
         element: <Resume></Resume>,
         children: [
           { path: "/resume/education", element: <Education></Education>}, 
-          {path: "/resume/skills", element: <Skills></Skills>}
+          {path: "/resume/skills", element: <Skills></Skills>},
         ]
-      }
+      }, 
+      { path: "/projects", element: <Projects></Projects> }
     ]
   },
 ]);
