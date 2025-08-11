@@ -14,7 +14,7 @@ function Navbar() {
 
                 <div className="lg:flex items-center justify-center gap-8 text-xl hidden">
                     <NavLink to ="/" >Home</NavLink>
-                    <NavLink to = "/projects">Projects</NavLink>
+                    <NavLink to = "/resume">Resume</NavLink>
                 </div>
             </div>
         </div>
