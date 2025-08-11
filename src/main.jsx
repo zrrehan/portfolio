@@ -7,6 +7,8 @@ import {
 } from "react-router";
 import Layout from './Layout';
 import Home from './Routes/Home';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import LoadData from './LoadData';
 
 const router = createBrowserRouter([
   {
@@ -18,8 +20,14 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient();
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <LoadData>
+        <RouterProvider router={router} />
+      </LoadData>
+    </QueryClientProvider>
   </StrictMode>
 )
