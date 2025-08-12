@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { useQuery } from '@tanstack/react-query';
 import { FaGithub, FaLink } from 'react-icons/fa';
+import "./swiperStyle.css"
 
 
 
@@ -39,7 +40,7 @@ export default function SwiperComponent() {
                                 <h1 className='header-text text-3xl lg:text-8xl'>0{index + 1}</h1>
                                 <p className='text-xl lg:text-3xl'>{singleData.title}</p>
                                 <h1 className='text-6xl header-text'>{singleData.name}</h1>
-                                <p className='tlg:ext-xl'>{singleData.description}</p>
+                                <p className='lg:text-xl'>{singleData.description}</p>
                                 <p className='header-text text-[#a9927d] text-3xl font-semibold'>React, TailwindCSS, Express, MongoDB</p>
                                 <div className='divider'></div>
                                 <div className='flex gap-7'>

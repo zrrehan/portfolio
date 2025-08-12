@@ -15,7 +15,7 @@ function Home() {
         <div className="my-12">
             <div className="flex flex-col-reverse lg:flex-row justify-between gap-7 pb-8">
                 <div className="lg:w-[60%] space-y-3 lg:space-y-8">
-                    <h1 className="text-3xl space-y-3 header-text">
+                    <h1 className="text-4xl lg:text-6xl space-y-3 header-text">
                         <p className="text-xl lg:text-3xl">{title}</p>
                         Hello I'm <br />
                         <p className="text-4xl lg:text-6xl text-[#a9927d] font-bold">Khandaker Ziaur Rahman Rehan</p>
@@ -23,7 +23,9 @@ function Home() {
                     <p className="text-2xl">{description}</p>
 
                     <div className="flex items-center gap-4 lg:gap-9">
-                        <button className="btn lg:px-10 lg:py-6 lg:text-xl rounded-full bg-[#a9927d] hover:bg-[#a9927dc5]">Download CV <IoMdDownload /></button>
+                        <a href="./resume.pdf" download="Resume of Khandaker Ziaur Rahman Rehan">
+                            <button className="btn lg:px-10 lg:py-6 lg:text-xl rounded-full bg-[#a9927d] hover:bg-[#a9927dc5]">Download CV <IoMdDownload /></button>
+                        </a>
                         <a href="https://github.com/zrrehan" target="_blank"><FaGithub size={34} /></a>
                         <a href="https://www.linkedin.com/in/zrrehan/" target="_blank"><FaLinkedinIn size={34} /></a>
                         <a href="https://x.com/r_rrehan_" target="_blank"><BsTwitterX size={34} /></a>
@@ -43,11 +45,11 @@ function Home() {
                         { title: "Years of experience", number: year_of_experience }, 
                         { title: "Projects Completed", number: project_complete },
                         { title: "Problems Solved", number: problem_solved },
-                    ].map((singleData) => <div className="flex gap-2 header-text">
-                        <h1 className="text-6xl hidd">
-                            <CountUp end = {singleData.number} duration={17}></CountUp>
+                    ].map((singleData) => <div className="flex items-center gap-2 ">
+                        <h1 className="text-7xl">
+                            <CountUp end={singleData.number} duration={17} className="header-text font-extrabold"></CountUp>
                         </h1>
-                        <p className="text-3xl">{singleData.title}</p>
+                        <p className="text-3xl header-text">{singleData.title}</p>
                     </div>)
                 }
             </div>

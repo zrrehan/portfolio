@@ -13,6 +13,7 @@ import Resume from './Routes/Resume';
 import Education from './Components/Resume/Education';
 import Skills from './Components/Resume/Skills';
 import Projects from './Components/Resume/Projects/Projects';
+import AboutMe from './Components/Resume/AboutMe/AboutMe';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
         children: [
           { path: "/resume/education", element: <Education></Education>}, 
           {path: "/resume/skills", element: <Skills></Skills>},
+          { path: "/resume/about-me", element: <AboutMe></AboutMe> },
         ]
       }, 
       { path: "/projects", element: <Projects></Projects> }
