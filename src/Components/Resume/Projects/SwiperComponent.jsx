@@ -11,6 +11,7 @@ import { Navigation } from 'swiper/modules';
 import { useQuery } from '@tanstack/react-query';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import "./swiperStyle.css"
+import Loading from '../../../Loading';
 
 
 
@@ -24,7 +25,7 @@ export default function SwiperComponent() {
     })
 
     if (isPending) {
-        return <p className="bg-red-400">Loading....</p>
+        return <Loading></Loading>
     }
 
     if (isError) {

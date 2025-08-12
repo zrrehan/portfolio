@@ -29,10 +29,10 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className="lg:flex items-center justify-center gap-8 text-xl hidden">
-                    <NavLink to ="/" >Home</NavLink>
-                    <NavLink to="/projects">Projects</NavLink>
-                    <NavLink to = "/resume/skills">Resume</NavLink>
+                <div className="lg:flex items-center justify-center gap-8 text-xl hidden ">
+                    <NavLink to ="/" className="header-text text-3xl " >Home</NavLink>
+                    <NavLink to="/projects" className="header-text text-3xl ">Projects</NavLink>
+                    <NavLink to = "/resume/skills" className="header-text text-3xl ">Resume</NavLink>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { createContext, useContext } from "react";
+import Loading from "./Loading";
 
 export const MyContext = createContext(null)
 function LoadData({children}) {
@@ -10,9 +11,10 @@ function LoadData({children}) {
             return res.json();
         }
     })
+    
 
     if (isPending) {
-        return <p className="bg-red-400">Loading....</p>
+        return <Loading></Loading>
     }
 
     if (isError) {
